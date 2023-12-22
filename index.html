@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>calculadora</title>
+</head>
+
+<body>
+    <section class="calculadora">
+        <div class="tela">
+            <label for="painel">
+                <input type="text" id="painel" readonly>
+            </label>
+        </div>
+        <div class="teclado">
+            <button class="botao numero" onclick="digito('1')">1</button>
+            <button class="botao numero" onclick="digito('2')">2</button>
+            <button class="botao numero" onclick="digito('3')">3</button>
+            <button class="botao numero" onclick="digito('4')">4</button>
+            <button class="botao numero" onclick="digito('5')">5</button>
+            <button class="botao numero" onclick="digito('6')">6</button>
+            <button class="botao numero" onclick="digito('7')">7</button>
+            <button class="botao numero" onclick="digito('8')">8</button>
+            <button class="botao numero" onclick="digito('9')">9</button>
+            <button class="botao ponto" onclick="digito('.')">.</button>
+            <button class="botao numero" onclick="digito('0')">0</button>
+            <button class="botao operacao" onclick="operacao('+')">+</button>
+            <button class="botao operacao" onclick="operacao('-')">-</button>
+            <button class="botao operacao" onclick="operacao('/')">/</button>
+            <button class="botao operacao" onclick="operacao('*')">*</button>
+            <button class="botao igual" onclick="igual()">=</button>
+            <button class="botao apagar" onclick="apagar()">Apagar</button>
+        </div>
+    </section>
+</body>
+</html>
